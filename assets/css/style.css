@@ -8,12 +8,11 @@ ul{
 a{
     text-decoration: none;
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+.header{
     background-color: #FF9872;
     display: flex;
     flex-direction: row;
@@ -36,17 +35,17 @@ header{
     height: 25px;
     margin: 0px 30px;
 }
-.nav{
+.nav-pc{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
 }
-.nav>li>a{
+.nav-pc>li>a{
     color: whitesmoke;
     margin: 30px;
 }
-.header-right{
+.header-right-pc{
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -58,6 +57,79 @@ header{
     font-size: 20px;
     margin: 10px;
 }
+.header-right-sp{
+    display: none;
+}
+/* .ul-sp{
+    display: none;
+} */
+
+@media screen and (max-width:780px){
+    .home{
+        font-size: 25px;
+        color: whitesmoke;
+        height: 25px;
+        margin: 0px 15px;
+    }
+    .nav-pc{
+        display: none;
+    }
+    .header-right-pc{
+        display: none;
+    }
+    #hamburger {
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        margin: 0 0 0 auto;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .icon span {
+        position: absolute;
+        left: 15px;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 8px;
+        transition: ease 0.75s;
+    }
+    
+    .icon span:nth-of-type(1) {
+        top: 16px;
+    }
+    .icon span:nth-of-type(2) {
+        top: 28px;
+    }
+    .icon span:nth-of-type(3) {
+        bottom: 16px;
+    }
+    
+    .close span:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 28px;
+    }
+    
+    .close span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .close span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 28px;
+    }
+    
+    .header-right-sp {
+        top: 60px;
+        left: 0px;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        background-color: rgba(34, 49, 52, 0.9);
+    }
+}
+
 
 
 .home1{
@@ -82,7 +154,6 @@ header{
 .home1-left{
     color: transparent;
 }
-
 
 .home2{
     width: 100vw;
@@ -195,19 +266,6 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
