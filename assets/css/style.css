@@ -58,23 +58,22 @@ body{
 }
 
 
-
-.header-right-sp {
-    top: 40px;
-    left: 0px;
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.header-right-sp{
+    display: none;
 }
 
 @media screen and (max-width:780px){
-    .header-right-sp{
-        display: none;
+    .header-right-sp {
+        top: 40px;
+        left: 0px;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        background-color: rgba(34, 49, 52, 0.9);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     .home{
         font-size: 25px;

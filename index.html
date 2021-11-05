@@ -29,7 +29,7 @@
                 <span></span>
             </a>
         </nav>  
-        <nav class="header-right-sp">
+        <nav class="header-right-sp" id="header-right-sp">
             <ul class="ul-sp">
                 <li><a href="http://127.0.0.1:5500/work.html">Work</a></li>
                 <li><a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a></li>
@@ -96,6 +96,7 @@
     <!-- <script src="jquery-3.5.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
+        document.getElementById("header-right-sp").style.display ="none";
         $('#hamburger').on('click', function(){
         $('.icon').toggleClass('close');
         $('.header-right-sp').slideToggle();
