@@ -18,7 +18,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     position: fixed;
     width: 100vw;
     height: 40px;
@@ -57,14 +56,26 @@ body{
     font-size: 20px;
     margin: 10px;
 }
-.header-right-sp{
-    display: none;
+
+
+
+.header-right-sp {
+    top: 40px;
+    left: 0px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-/* .ul-sp{
-    display: none;
-} */
 
 @media screen and (max-width:780px){
+    .header-right-sp{
+        display: none;
+    }
     .home{
         font-size: 25px;
         color: whitesmoke;
@@ -85,7 +96,6 @@ body{
         height: 60px;
         width: 60px;
     }
-    
     .icon span {
         position: absolute;
         left: 15px;
@@ -95,7 +105,6 @@ body{
         border-radius: 8px;
         transition: ease 0.75s;
     }
-    
     .icon span:nth-of-type(1) {
         top: 16px;
     }
@@ -105,32 +114,25 @@ body{
     .icon span:nth-of-type(3) {
         bottom: 16px;
     }
-    
     .close span:nth-of-type(1) {
         transform: rotate(45deg);
         top: 28px;
     }
-    
     .close span:nth-of-type(2) {
         opacity: 0;
     }
-    
     .close span:nth-of-type(3) {
         transform: rotate(-45deg);
         top: 28px;
     }
-    
-    .header-right-sp {
-        top: 60px;
-        left: 0px;
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        background-color: rgba(34, 49, 52, 0.9);
+   
+    .ul-sp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
-
-
 
 .home1{
     background-image: url(../img/home1.jpg);
@@ -157,7 +159,6 @@ body{
 
 .home2{
     width: 100vw;
-    height: 81vh;
     color: #222222;
 }
 .lifegoals{
@@ -166,6 +167,14 @@ body{
     color: #222222;
     margin: 60px;
 }
+@media screen and (max-width:780px){
+    .lifegoals{
+        text-align: center;
+        font-size: 30px;
+        color: #222222;
+        margin: 30px;
+    }
+}
 .contents{
     display: flex;
     flex-direction: row;
@@ -173,12 +182,27 @@ body{
     align-items: center;
     color: #222222;
 }
+@media screen and (max-width:780px){
+    .contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #222222;
+    }
+}
 h3{
     font-size: 30px;
     margin: 20px;
 }
+@media screen and (max-width:780px){
+    h3{
+        font-size: 25px;
+        margin: 10px;
+    }
+}
 p{
-    font-size: 20px;
+    font-size: 18px;
     text-align:left;
     margin: 30px 0px 60px 0px;
 }
@@ -186,36 +210,52 @@ p{
     background-color: #FFDBC9;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 450px;
-    padding: 20px;
+    margin: 10px;
 }
 .contents-center{
     background-color: #FFDBC9;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 450px;
-    padding: 20px;
+    margin: 10px;
 }
 .contents-right{
     background-color: #FFDBC9;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 450px;
-    padding: 20px;
+    margin: 10px;
+}
+@media screen and (max-width:780px){
+    .contents-left{
+        background-color: #FFDBC9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .contents-center{
+        background-color: #FFDBC9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .contents-right{
+        background-color: #FFDBC9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
 }
 
 .home3{
     width: 100vw;
-    height: 81vh;
     color: #222222;
 }
 .immediategoal{
@@ -224,6 +264,14 @@ p{
     color: #222222;
     margin: 60px;
 }
+@media screen and (max-width:780px){
+    .immediategoal{
+        text-align: center;
+        font-size: 30px;
+        color: #222222;
+        margin: 30px;
+    }
+}
 .contents2{
     display: flex;
     flex-direction: row;
@@ -231,42 +279,33 @@ p{
     align-items: center;
     color: #222222;
 }
+@media screen and (max-width:780px){
+    .contents2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #222222;
+    }
+}
 .contents-left2{
     background-color: #FFDBC9;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    width: 500px;
-    height: 450px;
-    padding: 20px;
+    margin: 10px;
 }
 .contents-right2{
     background-color: #FFDBC9;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    width: 500px;
-    height: 450px;
-    padding: 20px;
-}
-.gradschool-p{
-    font-size: 18px;
-    text-align:left;
-    margin-bottom: 80px 0;
+    margin: 10px;
 }
 
 footer{
     color: #FF9872;
     background-color: #222222;
     height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
 }
-
-
-
-
