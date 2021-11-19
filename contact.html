@@ -9,6 +9,30 @@
 </head>
 
 <body>
-    <h1>Contact</h1>
+    <h1 class="h1contact">Contact</h1>
+    <form name="contact" method="POST" netlify class="contact">
+        <p>
+            <label>Your Name: <input type="text" name="name" class="boxspace"/></label>   
+        </p>
+        <p>
+            <label>Your Email: <input type="email" name="email" class="boxspace" /></label>
+        </p>
+        <p>
+            <label class="boxspace">Your Role: 
+                <select name="role[]" multiple>
+                    <option value="leader">WEB制作について</option>
+                    <option value="follower">ECサイトについて</option>
+                    <!-- <option value="follower">influencer業について</option> -->
+                    <option value="follower">その他お問合せ</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>Message: <textarea name="message" class="boxspace"></textarea></label>
+        </p>
+        <p>
+            <button type="submit" class="send-b">Send</button>
+        </p>
+    </form>
 </body>
 </html>
