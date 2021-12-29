@@ -377,6 +377,15 @@ h3{
     border-bottom: solid 6px;
     border-color: #FF9872;
 }
+@media screen and (max-width:780px){
+    .contents-left2{
+        width: 90%;
+    }
+    .contents-right2{
+        width: 90%;
+    }
+}
+
 i{
     margin: 20px;
 }
