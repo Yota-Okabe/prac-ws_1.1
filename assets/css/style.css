@@ -252,12 +252,12 @@ h3{
     margin: 20px 15px 20px 15px;
 }
 .gradschool-p{
-    font-size: 18px;
+    font-size: 14px;
     text-align:left;
     margin: 20px 15px 20px 15px;
 }
 .freelance-p{
-    font-size: 18px;
+    font-size: 14px;
     text-align:left;
     margin: 20px 15px 20px 15px;
 }
@@ -267,7 +267,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 31%;
+    width: 30%;
     margin: 10px;
     /* margin: 10px; */
     border-top: solid 1px;
@@ -282,7 +282,7 @@ h3{
     flex-direction: column;
     /* justify-content: ; */
     align-items: center;
-    width: 31%;
+    width: 30%;
     margin: 10px;
     /* margin: 10px; */
     border-top: solid 1px;
@@ -297,7 +297,7 @@ h3{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    width: 31%;
+    width: 30%;
     margin: 10px;
     /* margin: 10px; */
     border-top: solid 1px;
@@ -356,6 +356,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
     margin: 10px;
     border-top: solid 1px;
     border-left: solid 1px;
@@ -368,6 +369,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
     margin: 10px;
     border-top: solid 1px;
     border-left: solid 1px;
@@ -379,28 +381,42 @@ i{
     margin: 20px;
 }
 
-footer{
+.footer{
     color: #FF9872;
     background-color: #222222;
     height: 40px;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+.footer-others{
+    color: #FF9872;
+    background-color: #222222;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
 
 .h1contact{
     text-align: center;
     font-size: 50px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    /* margin: 40px; */
 }
 .send-b{
     font-size: 20px;
@@ -415,4 +431,5 @@ label{
 label{
     height: 30px;
     vertical-align: middle;
+    margin: 20px;
 }
